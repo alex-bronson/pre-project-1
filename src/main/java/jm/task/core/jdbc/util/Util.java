@@ -46,12 +46,8 @@ public class Util {
         return sessionFactory;
     }
 
-    public void closeSessionFactory() {
-        if (sessionFactory != null && !sessionFactory.isClosed()) {
-            sessionFactory.close();
-        }
-    }
 
+    // Методы к задаче для JDBC:
     public static Connection getConnection() {
         Connection connection = null;
         try {
