@@ -57,15 +57,5 @@ public class Util {
         }
         return connection;
     }
-
-    public void close(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
     // реализуйте настройку соеденения с БД
 }
